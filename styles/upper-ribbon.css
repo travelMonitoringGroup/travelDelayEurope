@@ -1,0 +1,39 @@
+.upper-ribbon-first{
+    height: 20px;
+    background-color: rgb(4, 4, 51);
+}
+.upper-ribbon-second{
+    height: 80px;
+    background-color: rgb(11, 11, 155);
+}
+.lower-ribbon-first{
+    height: 250px;
+    background-color: rgb(11, 11, 155);
+    margin-top: 20px;
+}
+.lower-ribbon-second{
+    height: 20px;
+    background-color: rgb(4, 4, 51);
+}
+.logo{
+    position: absolute;
+    height:80px;
+    margin-left:30px;
+}
+.text-logo{
+    position: absolute;
+    margin-left: 480px;
+    margin-top: 30px;
+    color:white;
+    font-size: 22px;
+}
+.selector-language{
+    position: absolute;
+    left: 90%;
+    margin-top: 15px;
+
+    background-color: blue;
+    color: white;
+    height: 50px;
+
+}

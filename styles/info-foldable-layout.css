@@ -1,0 +1,128 @@
+body{
+   /*  background-image: url("/images/background-5.png") ; */
+   background-color: whitesmoke;
+}
+.info-holder{
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    margin-right: 150px;
+    gap: 5px;
+}
+.info-module-route{
+    transition-duration: 1000ms;
+    background-color: rgb(218, 231, 235);
+    border: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-color: rgb(43, 140, 172);
+    border-bottom: none;
+
+    display: grid;
+    align-items: center;
+    grid-template-columns:  1fr 120px 5fr 1fr;
+    
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.info-module-holder{
+    transition-duration: 200ms;
+    display: grid;
+    align-items: center;
+    grid-template-columns:  1fr 120px 250px 60px 0px 0px 120px 250px 60px 1fr;
+    grid-template-rows: 1fr;
+    background-color: lightblue;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: rgb(43, 140, 172);
+    row-gap: 15px;
+
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 5px;
+}
+.info-module-holder:hover{
+    background-color: rgb(43, 140, 172);
+}
+@media screen and (max-width: 1200px){
+    .info-module-holder{
+        transition-duration: 1000ms;
+        background-color: lightblue;
+        display: grid;
+        grid-template-columns:  1fr 270px 375px 120px 1fr ;
+        grid-template-rows: 1fr 1fr; 
+        row-gap: 15px;
+
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 5px;
+    }
+
+    .info-module-route{
+        background-color: lightblue;
+        border-width: 2px;
+        border-radius: 5px;
+        border-color: rgb(43, 140, 172);
+    
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 5px;
+    }
+
+    .info-holder{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .miniaturka-train{
+        width: 70px;
+        width: 70px;
+    }
+}
+
+.info-module{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: rgb(43, 172, 71);
+    background-color: rgb(37, 145, 15);
+}
+.p-style{
+    margin: 0; 
+    font-size: 18px; 
+    text-align: center;
+    resize: none;
+}
+.p-lebel-style{
+    margin: 0; 
+    font-size: 12px; 
+    text-align: center;
+}
+.p-lebel-style-bold{
+    margin: 0; 
+    font-size: 18px; 
+    font-weight: bold;
+    text-align: center;
+}
+
+.miniaturka-flag{
+    width: 50%;
+    height: 50%;
+    object-position: center;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+.miniaturka-train{
+    width: 50%;
+    height: 50%px;
+    object-position: center;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}

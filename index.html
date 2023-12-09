@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel Delay Europe</title>
+        <link rel="stylesheet" href="/styles/info-foldable-layout.css">
+        <link rel="stylesheet" href="/styles/upper-ribbon.css">
+        <link rel="stylesheet" href="/styles/hello-graphic.css">
+        <link rel="stylesheet" href="/styles/button.css">
+        <link rel="stylesheet" href="/styles/add.css">
+    </head>
+
+    <body>
+        <div class="upper-ribbon-first"> </div>
+            <image class="logo"src="/images/Logo2.PNG"> 
+            <p class="text-logo">Portal dedicated to train delays in Europe</p>
+            <select class="selector-language" id = "languageSelector">
+                <!-- <option value = 0> PL </option> -->
+                <option value = 1 selected="selected"> EN </option>
+                <!-- <option value = 2> DE </option> -->
+            </select>
+        <div class="upper-ribbon-second"></div>
+        <div class="hello-holder">
+            <image class = "hello-graphic" src="/images/hello-graphic-6.png">
+            <div class="hello-text">
+                In the European Union, 9.8% of trains arrived late. In 2021 railways took 5,200,000 passengers to 36,000 stations. The number of minutes that passengers lost through train delays is uncountable. The travelDelay group will allow you to plan your journey down to one extra minute.
+            </div>
+        </div>
+        <div class = "but-holder">
+            <a class="button-page" href="index.html">MAIN DELAY</a>
+            <a class="button-page" href="allDelayed.html">ALL DELAYED</a>
+            <a class="button-page" href="allMonitored.html">ALL MONITORED ROUTES</a>
+            <a class="button-page">FORMS AND CONTACT</a>
+            <a class="button-page">TravelDELAY GROUP</a>
+        </div>
+        <div id="info-holder"></div> 
+        <div class="add"></div>
+        <div class="lower-ribbon-first"></div>
+        <div class="lower-ribbon-second"></div>
+    </body>
+    
+    <script type="module">
+        import { importData } from './importDelayInfo.js';
+        import { createMainInfo } from './createMainInfo2.js'
+        
+        const importedDelayInfo = await importData("delayDatabase/delaiedTrains21.11.23.16.59.json");
+        createMainInfo(importedDelayInfo,10);
+
+        console.log(importedDelayInfo);
+    </script>
+
+</html>
