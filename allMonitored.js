@@ -18,12 +18,12 @@ export function createAllMonitoredInfo(importedInfo){
         delayedDiv.setAttribute("class", "info-module-holder");
         let flagRoute; let trainIconRoute;
         if (element.motherland === "PL"){
-            flagRoute = "/images/flagPL.png";
+            flagRoute = "images/flagPL.png";
         }
         if(element.trainNumber.includes("IC" || element.trainNumber.includes("EIC") || element.trainNumber.includes("TLK"))){
-            trainIconRoute = "/images/ICpic2.png"
+            trainIconRoute = "images/ICpic2.png"
         } else{
-            trainIconRoute = "/images/Rpic2.png"
+            trainIconRoute = "images/Rpic2.png"
         }
         delayedDiv.innerHTML = `
             
