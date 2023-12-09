@@ -24,12 +24,12 @@ export function createMainInfo(importedInfo, liczbaInfo){
         delayedDiv.setAttribute("id", ii);
         let flagRoute; let trainIconRoute;
         if (importedInfo[ii].motherland === "PL"){
-            flagRoute = "/images/flagPL.png";
+            flagRoute = "images/flagPL.png";
         }
         if(importedInfo[ii].trainNumber.includes("IC" || importedInfo[ii].trainNumber.includes("EIC") ||importedInfo[ii].trainNumber.includes("TLK"))){
-            trainIconRoute = "/images/ICpic2.png"
+            trainIconRoute = "images/ICpic2.png"
         } else{
-            trainIconRoute = "/images/Rpic2.png"
+            trainIconRoute = "images/Rpic2.png"
         }
         let czyZawieraStacjeWyszukiwania = false;
         importedInfo[ii].midStations.forEach((el)=>{
